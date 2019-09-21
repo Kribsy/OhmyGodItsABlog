@@ -1,0 +1,9 @@
+*.pyc
+*~
+__pycache__
+kribs
+db.sqlite3
+/static
+.DS_Store
+.idea
+example.py
