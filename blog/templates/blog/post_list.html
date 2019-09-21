@@ -9,12 +9,17 @@
 
 <p>Hi there! It <em>works!</em></p>
 
-    <div>
-        <h2><a href="https://djangogirls.org">Djangogirls</a></h2>
-        <ul><li>Яблоко</li><li>Груша</li><li>Апельсин</li></ul>
-    </div>
+{% for post in posts %}
+<div>
+    <p>published:{{post.published_date}}</p>
+    <h2><a href="">{{ post.title }}</a></h2>
+    <p>{{ post.text|linebreaksbr }}</p>
+</div>
+{% endfor %}
+
 </body>
 </html>
+
 
 
 
